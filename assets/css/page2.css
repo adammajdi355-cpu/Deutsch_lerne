@@ -5,6 +5,7 @@ body{
     background-color: bisque;
     margin: 0;
     padding: 0;
+    
 }
 h1{
     text-align: center;
@@ -73,19 +74,22 @@ h1 a {
 
 
 main{
-    display: flex;
+    
+    flex: 1;
+}
+.all-cards{
+  max-width: 1100px;
+  display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 25px;
-    width: 100%;
-    margin: 20px auto;
-    
+    margin: 20px 55px;
 }
 .card{
     flex: 0 1 350px;
     height: 408px;
-  width: 250px; /* 3ard dyal card */
+  width: 350px; /* 3ard dyal card */
   margin: 0;
   padding: 10px 10px;
   background-color: black; /* loun l-biayd l-ta7t */
@@ -137,7 +141,7 @@ main{
     flex: 0 1 350px;
     background-color: black;
     border-radius: 12px;
-    width: 250px;
+    width: 350px;
      height: 408px;
     margin: 0;
     padding: 10px 10px;
@@ -201,8 +205,51 @@ display: inline; }
 .foot a:active{
     color: bisque;
 }
-@media (max-width:480px) {
-.text-content{margin: 30px;}
-.dropdown-content{min-width: 100px;}
-.card, .card_2 {margin:10px auto;}
+@media (max-width:320px) {
+  .all-cards{
+    max-width: 350px;
+    margin: 5px auto;
+    gap:10px;
+  }
+}
+
+ @media (max-width:425px) {
+  .all-cards{
+    max-width: 350px;
+    margin: 20px ;
+    gap: 20px;
+  }
+} 
+ @media (min-width:768px) and (max-width:840px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    flex: 1 0 auto;
+  }
+  .foot{
+    flex: none;
+  }
+  .all-cards{
+    max-width: 725px;
+    margin: 20px auto;
+    gap:25px;
+  }
+} 
+@media (min-width:841px) and (max-width:1024px) {
+  .all-cards{
+    max-width: 768px;
+    gap:25px;
+    margin: 20px auto;
+  }
+  
+}
+@media (min-width:1025px) and (max-width:1440px) {
+  .all-cards{
+    width: 1200px;
+    gap:25px;
+    margin: 50px auto;
+  }
+  
 }
