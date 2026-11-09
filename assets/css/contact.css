@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    text-align: center;
+    
+    
+}
+h1 a {
+    text-decoration: none;
+    color: brown;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    
+}
+.navbar a {
+    
+    color: bisque;
+    margin: 10px 15px;
+    text-decoration:none;
+}
+.navbar a:hover{
+    color: brown;
+    transition: calc(0.3s);
+}
+
+
+main{
+    flex: 1 ;
+    margin: 20px auto;
+    max-width: 300px;
+    max-height: 350px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: brown;
+    padding: 30px;
+    box-shadow: black 3px 3px 3px;
+}
+fieldset{
+    width: 200px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+fieldset .title {
+    text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+   
+    margin: 15px;
+
+}
+label{
+    display: block;
+    margin: 5px;
+    font-family: sans-serif;
+}
+input {
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    height: 20px;
+    width: 200px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input:hover::placeholder{
+    color: black;
+}
+input::placeholder{
+    text-align: center;
+}
+input:hover{
+    background-color: bisque;
+    color: black;
+
+}
+input:focus{
+     background-color: bisque;
+    color: black;
+}
+input::after{
+    background-color: bisque;
+    color: black;
+}
+textarea{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    height: 70px;
+    width: 200px;
+     margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+textarea:hover{
+    background-color: bisque;
+    color: black;
+}
+textarea:focus{
+     background-color: bisque;
+    color: black;
+    
+}
+
+
+.btn{
+    margin: 20px 40px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: bisque;
+    cursor: pointer;
+   
+}
+.btn:hover{
+    background-color: black;
+    color: bisque;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.btn:active{
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+.foot{
+    margin-top: auto;
+    background: rgb(41, 38, 38);
+    color: bisque;
+    padding: 5px;
+    text-align: left;
+}
+.foot p{
+     
+    display: inline;
+    padding: 0 15px;
+}
+.foot a{ color: bisque;
+text-decoration: none;
+display: inline; }
+.foot a:hover{
+    color: brown;
+}
+.foot a:active{
+    color: bisque;
+}

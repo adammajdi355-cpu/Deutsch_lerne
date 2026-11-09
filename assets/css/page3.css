@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    
+    
+}
+h1 a {
+    text-decoration: none;
+    color: brown;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    
+}
+.navbar a {
+    
+    color: bisque;
+    margin: 10px 15px;
+    text-decoration:none;
+}
+.navbar a:hover{
+    color: brown;
+    transition: calc(0.3s);
+}
+
+.img-text  {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    background-color: black;
+}
+
+.text-content{
+    margin: auto 100px;
+    padding-bottom: 50px;
+}
+.text-content h2{
+    text-align: center;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.text-content .content{
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+}
+abbr {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+abbr:hover{
+    color: brown;
+}
+
+abbr:hover::after {
+    content: attr(data-translation);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    white-space: nowrap;
+}
+
+
+.foot{
+    background: rgb(41, 38, 38);
+    color: bisque;
+    padding: 5px;
+    text-align: left;
+}
+.foot p{
+    display: inline;
+    padding: 0 15px;
+}
+.foot a{ color: bisque;
+text-decoration: none;
+display: inline; }
+.foot a:hover{
+    color: brown;
+}
+.foot a:active{
+    color: bisque;
+}
