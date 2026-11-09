@@ -75,13 +75,18 @@ h1 a {
 main{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    margin: 20px auto;
+    
 }
 .card{
     flex: 0 1 350px;
     height: 408px;
-  width: 350px; /* 3ard dyal card */
-  margin: 10px 10px;
+  width: 250px; /* 3ard dyal card */
+  margin: 0;
   padding: 10px 10px;
   background-color: black; /* loun l-biayd l-ta7t */
   color: brown;
@@ -132,9 +137,9 @@ main{
     flex: 0 1 350px;
     background-color: black;
     border-radius: 12px;
-    width: 350px;
+    width: 250px;
      height: 408px;
-    margin: 10px 10px;
+    margin: 0;
     padding: 10px 10px;
     color: brown;
     overflow: hidden;
@@ -176,4 +181,9 @@ main{
     background-color: bisque;
     color: black;
     transform: translateY(-2px);
+}
+@media (max-width:480px) {
+.text-content{margin: 30px;}
+.dropdown-content{min-width: 100px;}
+.card, .card_2 {margin:10px auto;}
 }

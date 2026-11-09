@@ -40,6 +40,44 @@ h1 a {
     color: brown;
     transition: calc(0.3s);
 }
+.dropdown {
+  position: relative;
+}
+.dropbtn {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+  background-color:black;
+  color: bisque;
+  
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: brown;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: black;
+  color: brown;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 
 .img-text  {
     position: relative;
@@ -111,4 +149,8 @@ display: inline; }
 }
 .foot a:active{
     color: bisque;
+}
+@media (max-width:480px) {
+.text-content{margin: 30px;}
+.dropdown-content{min-width: 100px;}
 }
