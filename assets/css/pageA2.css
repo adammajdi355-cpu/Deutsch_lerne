@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    
+    
+}
+h1 a {
+    text-decoration: none;
+    color: brown;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    
+}
+.navbar a {
+    
+    color: bisque;
+    margin: 10px 15px;
+    text-decoration:none;
+}
+.navbar a:hover{
+    color: brown;
+    transition: calc(0.3s);
+}
+.dropdown {
+  position: relative;
+}
+.dropbtn {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+  background-color:black;
+  color: bisque;
+  
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: brown;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: black;
+  color: brown;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.title-secender{
+    display: block;
+    font-family:sans-serif;
+    text-align: center;
+    background-color: brown;
+    padding: 10px;
+    z-index: 10;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    margin: 20px auto;
+    
+}
+
+.card{
+    flex: 0 1 350px;
+    height: 408px;
+  width: 250px; /* 3ard dyal card */
+  margin: 0;
+  padding: 10px 10px;
+  background-color: black; /* loun l-biayd l-ta7t */
+  color: brown;
+  border-radius: 12px; /* zwya mdewra */
+  overflow: hidden; /* bach l-purple ma y-khrojch barra radius */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* dell khfif */
+  font-family: sans-serif;
+ 
+}
+.card-image{
+  height: 160px; /* tol dyal l-purple */
+  background: brown; /* nafs loun li f tsowira dyalek - light purple */
+}
+.card-content{
+  padding: 20px; /* khawi men dakhél */
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 700; /* ghlid */
+  color: brown; /* k7al ghame9 */
+  line-height: 1.4; /* tab3ad bin stor */
+  margin: 0 0 12px 0; /* 0 fo9, 0 lisar/limin, 12px ta7t */
+}
+.card-desc{
+  font-size: 15px;
+  color: rgb(142, 51, 51); /* rmadi */
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+.card-btn{
+  display: inline-block; /* bach y-ched ghir 9ad ktba */
+  background: brown; /* zra9 */
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none; /* 7yed khat ta7tani */
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s; /* animation mlli dir mouse */
+  margin-top: auto;
+}
+.card-btn:hover{
+  background: bisque; /* zra9 ghame9 mlli dir mouse */
+  color: black;
+  transform: translateY(-2px); /* kay-tla3 2px l-fo9 */
+}
+.card_2 {
+    flex: 0 1 350px;
+    background-color: black;
+    border-radius: 12px;
+    width: 250px;
+     height: 408px;
+    margin: 0;
+    padding: 10px 10px;
+    color: brown;
+    overflow: hidden;
+    box-shadow:  0 4px 15px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+}
+.image_card_2{
+    height: 160px;
+    background-color: brown;
+}
+.content_card_2{
+    padding: 20px;
+}
+.title_card_2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin:0 0 12px 0;
+}
+.desc_card_2{
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    color:  rgb(142, 51, 51);
+}
+.btn_card_2{
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: calc(0.3s);
+    margin-top: auto;
+}
+.btn_card_2:hover{
+    background-color: bisque;
+    color: black;
+    transform: translateY(-2px);
+}
+@media (max-width:480px) {
+.text-content{margin: 30px;}
+.dropdown-content{min-width: 100px;}
+.card, .card_2 {margin:10px auto;}
+}
