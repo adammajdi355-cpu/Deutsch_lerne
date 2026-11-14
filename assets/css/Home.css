@@ -14,7 +14,7 @@ h1{
 }
 h1 a {
     text-decoration: none;
-    color: brown;
+    color: #780516;
 }
 .navbar{
     display: flex;
@@ -30,7 +30,7 @@ h1 a {
     text-decoration:none;
 }
 .navbar a:hover{
-    color: brown;
+    color: #780516;
     transition: calc(0.3s);
 }
 .dropdown {
@@ -51,7 +51,7 @@ h1 a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: brown;
+  background-color: #780516;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 10000;
@@ -64,18 +64,22 @@ h1 a {
 }
 .dropdown-content a:hover {
   background-color: black;
-  color: brown;
+  color: #780516;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .title-secender{
-    display: block;
+  display: block;
     font-family:sans-serif;
     text-align: center;
-    background-color: brown;
-    padding: 10px;
+    background-color: #780516;
+    color: #FFF8E7;
+    padding: 5px;
     z-index: 10;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
 main{
     
@@ -97,7 +101,8 @@ main{
   margin: 0;
   padding: 10px 10px;
   background-color: black; /* loun l-biayd l-ta7t */
-  color: brown;
+  color:#FFF8E7;
+   border: 3px solid #D4AF37;
   border-radius: 12px; /* zwya mdewra */
   overflow: hidden; /* bach l-purple ma y-khrojch barra radius */
   box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* dell khfif */
@@ -106,7 +111,29 @@ main{
 }
 .card-image{
   height: 160px; /* tol dyal l-purple */
-  background: brown; /* nafs loun li f tsowira dyalek - light purple */
+  background: #780516; /* nafs loun li f tsowira dyalek - light purple */
+    position: relative;
+}
+/* .image{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    z-index: 20;
+} */
+/*  absolute khrjat tswira men tadafo9 dyal relative
+ */ 
+ .image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 160px;
+    object-fit: cover;
+    /* margin: 30px auto; */
+    /* border-radius: 12px; */
 }
 .card-content{
   padding: 20px; /* khawi men dakhél */
@@ -115,22 +142,23 @@ main{
 .card-title{
   font-size: 20px;
   font-weight: 700; /* ghlid */
-  color: brown; /* k7al ghame9 */
+  color:#FFF8E7; /* k7al ghame9 */
   line-height: 1.4; /* tab3ad bin stor */
   margin: 0 0 12px 0; /* 0 fo9, 0 lisar/limin, 12px ta7t */
 }
 .card-desc{
   font-size: 15px;
-  color: rgb(142, 51, 51); /* rmadi */
+  color:#FFF8E7; /* rmadi */
   line-height: 1.6;
   margin: 0 0 20px 0;
 }
 .card-btn{
   display: inline-block; /* bach y-ched ghir 9ad ktba */
-  background: brown; /* zra9 */
+  background: #780516; /* zra9 */
   color: white;
   padding: 8px 14px;
-  border-radius: 6px;
+   border: 2px solid #D4AF37;
+  border-radius: 10px;
   text-decoration: none; /* 7yed khat ta7tani */
   font-weight: 600;
   font-size: 14px;
@@ -145,19 +173,20 @@ main{
 .card {
     flex: 0 1 350px;
     background-color: black;
+    border: 3px solid #D4AF37;
     border-radius: 12px;
     width: 350px;
      height: 408px;
     margin: 0;
     padding: 10px 10px;
-    color: brown;
+    color:#FFF8E7;
     overflow: hidden;
     box-shadow:  0 4px 15px rgba(0,0,0,0.1);
     font-family: sans-serif;
 }
 .image_card{
     height: 160px;
-    background-color: brown;
+    background-color: #780516;
 }
 .content_card{
     padding: 20px;
@@ -172,14 +201,15 @@ main{
     font-size: 15px;
     line-height: 1.6;
     margin: 0 0 20px 0;
-    color:  rgb(142, 51, 51);
+    color:  #FFF8E7;
 }
 .btn_card{
     display: inline-block;
-    background-color: brown;
+    background-color: #780516;
     color: white;
     padding: 8px 14px;
-    border-radius: 6px;
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
@@ -209,7 +239,7 @@ main{
 text-decoration: none;
 display: inline; }
 .foot a:hover{
-    color: brown;
+    color: #780516;
 }
 .foot a:active{
     color: bisque;
