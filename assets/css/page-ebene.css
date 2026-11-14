@@ -94,7 +94,7 @@ h1 a {
 .card{
     flex: 0 1 350px;
     height: 408px;
-  width: 350px; /* 3ard dyal card */
+  width: 300px; /* 3ard dyal card */
   margin: 0;
   padding: 10px 10px;
   background-color: black; /* loun l-biayd l-ta7t */
@@ -111,6 +111,7 @@ h1 a {
 }
 .card-content{
   padding: 20px; /* khawi men dakhél */
+  flex: 1;
 }
 .card-title{
   font-size: 20px;
@@ -137,6 +138,7 @@ h1 a {
   transition: 0.3s; /* animation mlli dir mouse */
   margin-top: auto;
 }
+
 .card-btn:hover{
   background: bisque; /* zra9 ghame9 mlli dir mouse */
   color: black;
@@ -146,14 +148,18 @@ h1 a {
     flex: 0 1 350px;
     background-color: black;
     border-radius: 12px;
-    width: 350px;
-     height: 408px;
+    width: 300px;
+    height: 408px;
     margin: 0;
     padding: 10px 10px;
     color: brown;
     overflow: hidden;
     box-shadow:  0 4px 15px rgba(0,0,0,0.1);
     font-family: sans-serif;
+}
+.card_2{
+  display: flex;
+  flex-direction: column;
 }
 .image_card_2{
     height: 160px;
@@ -192,7 +198,51 @@ h1 a {
     transform: translateY(-2px);
 }
 .card, .card_2{
+   display: flex;
+    flex-direction: column;
+}
+.card, .card_2{
     flex: 0 0 350px;
     height: 408px;
     margin: 0;
 }
+.foot{
+    background: rgb(41, 38, 38);
+    color: bisque;
+    padding: 5px;
+    text-align: left;
+}
+.foot p{
+    display: inline;
+    padding: 0 15px;
+}
+.foot a{ color: bisque;
+text-decoration: none;
+display: inline; }
+.foot a:hover{
+    color: brown;
+}
+.foot a:active{
+    color: bisque;
+}
+@media (max-width:425px) {
+  .all-cards{
+    max-width: 360px;
+    /* padding: 20px; */
+    /* margin: 20px ; */
+    gap: 20px;
+  }
+  .card{
+    width: 250px;
+    height: 430px;
+  }
+  .card_2{
+    width: 250px;
+    height: 430px;
+  }
+  .card, .card_2{
+    flex: 0 0 300px;
+    height: 408px;
+    margin: 0;
+  }
+} 
