@@ -81,13 +81,29 @@ h1 a {
 
 .img-text  {
     position: relative;
+    
+   
+}
+/* .image{
+    position: absolute;
     height: 300px;
     width: 100%;
     max-width: 600px;
     border-radius: 12px;
     box-sizing: border-box;
     margin: 50px auto;
-    background-color: black;
+    z-index: 20;
+} */
+/*  absolute khrjat tswira men tadafo9 dyal relative
+ */ 
+ .image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin: 30px auto;
+    border-radius: 12px;
 }
 
 .text-content{
